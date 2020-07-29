@@ -1,9 +1,61 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastre-se!</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nome Completo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
 
+    <ion-item lines="full">
+      <ion-label position="floating">CPF</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Data de Nascimento</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Gênero</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Celular</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Confirmar Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/home']" type="submit" color="danger" expand="block">Cancelar</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button type="submit" color="primary" expand="block">Confirmar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>

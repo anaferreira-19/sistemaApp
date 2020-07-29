@@ -27,9 +27,11 @@
 
     <ion-item>
       <ion-checkbox></ion-checkbox>
-         Deseja ficar conectado?
+      Deseja ficar conectado?
     </ion-item>
     <ion-label position="floating">Caso não tenha uma conta, cadastre-se.</ion-label>
-    <ion-button type="submit" color="success" expand="block" href="cadastro.page.html">Cadastro</ion-button>
+    <ion-item>
+      <ion-button [routerLink]="['/cadastro']" type="submit" color="success" expand="block">Cadastro</ion-button>
+    </ion-item>
   </form>
 </ion-content>
